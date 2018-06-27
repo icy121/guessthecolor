@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Guess the color!!</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/color.css">
+  </head>
+  <body>
+    <header>
+      <h2>Guess the color!!</h2>
+      <h1 id="colorcode">RGB(0,0,0)</h1>
+      <hr>
+      <h2>COLOR GUESSING GAME</h2>
+    </header>
+    <div class="navbarcontainer">
+      <nav class="navbar navbar-inverted">
+      <div class="container-fluid">
+        <div class="navbarelements">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Colorful Panda</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#" id="easymode">EASY</a></li>
+              <li><a href="#" id="hardmode">HARD</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div>
+
+      </div><!-- /.container-fluid -->
+      </nav>
+    </div>
+
+    <div class="colorboxes">
+      <table>
+        <tr class="colorrow" id="colorrow1">
+          <td class="boxcolor" id="boxcolor1"></td>
+          <td class="boxcolor" id="boxcolor2"></td>
+          <td class="boxcolor" id="boxcolor3"></td>
+        </tr>
+        <tr class="colorrow" id="colorrow2">
+          <td class="boxcolor" id="boxcolor4"></td>
+          <td class="boxcolor" id="boxcolor5"></td>
+          <td class="boxcolor" id="boxcolor6"></td>
+        </tr>
+        <tr class="colorrow" id="colorrow3">
+          <td class="boxcolor" id="boxcolor6"></td>
+          <td class="boxcolor" id="boxcolor7"></td>
+          <td class="boxcolor" id="boxcolor8"></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+  <script type="text/javascript" src="js/color.js">
+
+  </script>
+</html>

@@ -5,41 +5,45 @@
     <title>Guess the color!!</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/color.css">
+    <script type="text/javascript" src="jq.js">
+    </script>
+    <script type="text/javascript" src="js/bootstrap.min.js">
+    </script>
   </head>
   <body>
     <header>
       <h2>Guess the color!!</h2>
       <h1 id="colorcode">RGB(0,0,0)</h1>
       <hr>
-      <h2>COLOR GUESSING GAME</h2>
+      <!-- <h2>COLOR GUESSING GAME</h2> -->
     </header>
-    <div class="navbarcontainer">
-      <nav class="navbar navbar-inverted">
+    <nav class="navbar navbar-inverted">
       <div class="container-fluid">
-        <div class="navbarelements">
+        <div class="navbarelements container">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <a class="navbar-brand" href="#">Colorful Panda</a>
+            <button type="button" class="col-md-4 col-sm-6 navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-col" aria-expanded="false">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Colorful Panda</a>
           </div>
 
           <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
+          <div class="collapse navbar-collapse" id="bs-nav-col">
+            <ul class="nav navbar-nav navbar-right col-sm-6">
               <li><a href="#" id="easymode">EASY</a></li>
               <li><a href="#" id="hardmode">HARD</a></li>
             </ul>
+            <ul class="nav navbar-nav">
+              <li><a class="message" id="message"> </a></li>
+            </ul>
           </div><!-- /.navbar-collapse -->
         </div>
-
       </div><!-- /.container-fluid -->
-      </nav>
-    </div>
+    </nav>
 
     <div class="colorboxes">
       <table>
@@ -60,8 +64,8 @@
         </tr>
       </table>
     </div>
-  </body>
-  <script type="text/javascript" src="js/color.js">
 
-  </script>
+<script type="text/javascript" src="js/color.js">
+</script>
+</body>
 </html>

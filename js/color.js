@@ -36,7 +36,8 @@ function sleep(milliseconds) {
   }
 }
 
-function colornum(rgb) {
+function colornum(rgb)
+{
   rgb = Array.prototype.join.call(arguments).match(/(-?[0-9\.]+)/g);
   for (var i = 0; i < headerelements.length; i++) {
     headerelements[i].style.background=rightcolor
@@ -51,8 +52,17 @@ function colornum(rgb) {
 
     }
 }
+
 function init()
 {
+  for (var i = 0; i < noofboxes; i++)
+  {if (noofboxes==6){
+    colorboxes[i].classList.add("six")
+    }
+    else {
+      colorboxes[i].classList.remove("six")
+      }
+  }
   for (var i = 0; i < noofboxes; i++)
   {
     colorboxes[i].addEventListener("click",function()
@@ -97,8 +107,7 @@ function newgame()
 }
 
 easymode.addEventListener("click",function easymodegame()
-{ var t=table.innerHTML;
-  t=t.split("</tr>")
+{ t=temp.split("</tr>")
   teasy=t[0]+"</tr>"+t[1]+"</tr>"+t[3]
   console.log(teasy);
   table.innerHTML=teasy

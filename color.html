@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Guess the color!!</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/color.css">
     <script type="text/javascript" src="jq.js">
@@ -23,6 +24,7 @@
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
             <a class="navbar-brand" href="#">Colorful Panda</a>
+              <strong><span class="message navbar-brand" id="message">  </span></strong>
             <button type="button" class="col-md-4 col-sm-6 navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-col" aria-expanded="false">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
@@ -37,9 +39,6 @@
               <li><a href="#" id="easymode">EASY</a></li>
               <li><a href="#" id="hardmode">HARD</a></li>
             </ul>
-            <ul class="nav navbar-nav">
-              <li><a class="message" id="message"> </a></li>
-            </ul>
           </div><!-- /.navbar-collapse -->
         </div>
       </div><!-- /.container-fluid -->
@@ -47,21 +46,23 @@
 
     <div class="colorboxes">
       <table>
-        <tr class="colorrow" id="colorrow1">
-          <td class="boxcolor" id="boxcolor1"></td>
-          <td class="boxcolor" id="boxcolor2"></td>
-          <td class="boxcolor" id="boxcolor3"></td>
-        </tr>
-        <tr class="colorrow" id="colorrow2">
-          <td class="boxcolor" id="boxcolor4"></td>
-          <td class="boxcolor" id="boxcolor5"></td>
-          <td class="boxcolor" id="boxcolor6"></td>
-        </tr>
-        <tr class="colorrow" id="colorrow3">
-          <td class="boxcolor" id="boxcolor6"></td>
-          <td class="boxcolor" id="boxcolor7"></td>
-          <td class="boxcolor" id="boxcolor8"></td>
-        </tr>
+        <tbody>
+          <tr class="colorrow" id="colorrow1">
+            <td class="boxcolor" id="boxcolor1"></td>
+            <td class="boxcolor" id="boxcolor2"></td>
+            <td class="boxcolor" id="boxcolor3"></td>
+          </tr>
+          <tr class="colorrow" id="colorrow2">
+            <td class="boxcolor" id="boxcolor4"></td>
+            <td class="boxcolor" id="boxcolor5"></td>
+            <td class="boxcolor" id="boxcolor6"></td>
+          </tr>
+          <tr class="colorrow" id="colorrow3">
+            <td class="boxcolor" id="boxcolor6"></td>
+            <td class="boxcolor" id="boxcolor7"></td>
+            <td class="boxcolor" id="boxcolor8"></td>
+          </tr>
+        </tbody>
       </table>
     </div>
 

@@ -1,12 +1,18 @@
+body *{
+outline: none;}
 header{
+  max-height: 10em;
   margin: auto;
   padding: auto;
   background-color: #2080d0;
   -webkit-transition: background 0.6s;
   -moz-transition: background 0.6s;
 }
+header>*{
+  width: 80%
+}
 header *{
-  width: 50%;
+  /* width: 50%; */
   margin-left: auto;
   margin-right: auto;
   padding-top: 0.3em;
@@ -14,21 +20,37 @@ header *{
   margin-top: 0;
   margin-bottom: 0;
   text-align: center;
-  font-size: 2em
+  font-family: 'Roboto Mono', monospace;
+  }
+
+header h1{
+  font-size: 30px;
+  font-weight: 600;
+}
+header h2{
+  font-size: 25px;
+  font-weight: 300;
 }
 
 .container-fluid{
   background: white;
 }
 
-table,.container-fluid>*{
-  width: 50%;
+.container-fluid>*{
+  width: 30em;
+  margin-left: auto;
+  margin-right: auto;
+}
+table{
+  width: 30em;
   margin-left: auto;
   margin-right: auto;
 }
 
 .navbarelements>*{
   width: auto;
+  font-weight: 600;
+
 }
 
 .icon-bar{
@@ -41,18 +63,27 @@ table,.container-fluid>*{
   border: 2px dashed white
 } */
 
+.colorboxes>*,.navbarelements{
+  width: 50%;
+  max-width: 30em
+}
 
 .boxcolor{
-  width: 30%;
+  /* width: 30%; */
   background-color: green;
-  padding-left: 0.3em;
+  /* padding-left: 0.3em; */
   padding-top: 0.3em;
   border: 1em solid white;
+  max-width: 30%;
   padding-bottom: 30%;
-  border-radius: 20%;
+  border-radius: 40px;
   -webkit-transition: background 0.6s;
   -moz-transition: background 0.6s;
 }
+/* .six{
+  width: 30%;
+  padding-bottom: 30;
+} */
 
 body{
   background-color: black
@@ -62,25 +93,38 @@ body{
   color: black
 }
 .navclick{
-  background: white;
   color: black;
+  text-decoration: underline;
+  -moz-transition: color 0.5s;
+  -webkit-transition: color 0.5s;
 }
 
 .message{
   text-align: center;
   color: black;
-  text-decoration: underline;
+  text-decoration: underline overline;
   background: white;
-  width: 100px;
-  padding-right: 1000px
-  /* margin-top: 15px; */
+  width: 9em;
+  /* padding-top: 15px;
+  margin-top: 15px; */
+  transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -webkit-transition: opacity 1s ease-in-out;
+  font-weight: 600;
+  text-indent: right;
+  font-family: 'Roboto Mono', monospace;
 }
 
 #bs-nav-col li,#bs-nav-col ul{
   padding: 0px;
   /* width: 30% */
 }
-.navbar-right,.navbar-right *{
+.navbar-right{
   width: auto;
   padding-left: 50%;
+}
+#easymode,#hardmode{
+  /* width: auto; */
+  padding-left: 10%;
+  padding-right: 10%;
   }
